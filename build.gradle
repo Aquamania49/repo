@@ -6,15 +6,22 @@ buildscript {
     
 }
 
+pply plugin: 'java'
+apply plugin: 'application'
+
+
+dependencies {
+    compile 'com.google.guava:guava:21.0'  
+    testCompile 'junit:junit:4.12'         
+}
+
+mainClassName = 'App' 
 
 repositories {
     jcenter()
     mavenCentral()
 }
 
-
-dependency {
-}
 
 task wrapper(type: Wrapper) {
     gradleVersion = '4.9' //we want gradle 4.9 to run this project
