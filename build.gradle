@@ -6,7 +6,7 @@ buildscript {
     
 }
 
-pply plugin: 'java'
+apply plugin: 'java'
 apply plugin: 'application'
 
 
